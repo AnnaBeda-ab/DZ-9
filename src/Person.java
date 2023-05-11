@@ -1,4 +1,4 @@
-public class Person {
+public abstract class Person {
    private String firstName;
    private String lastName;
    private int age;
@@ -39,12 +39,8 @@ public class Person {
     protected boolean isRetired (){
        return true;
     }
-    public void registerPartner (String lastNameOfHusband){
-        setLastName(lastNameOfHusband);
-    }
-    public void deregisterPartnership (boolean ifChange){ //тут не зовсім розібралася
-        setLastName(getLastName());
-    }
+    public abstract void registerPartner (String lastNameOfHusband);
+    public abstract void deregisterPartnership (boolean ifChange);
 
     @Override
     public String toString() {

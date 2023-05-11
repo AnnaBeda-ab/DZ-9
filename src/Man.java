@@ -5,11 +5,16 @@ public class Man extends Person {
 
     @Override
     public boolean isRetired() {
-        if (getAge() > 65) {
-            return true;
-        }
-        {
-            return false;
-        }
+        return getAge() > 65;
+    }
+
+    @Override
+    public void registerPartner(String lastNameOfHusband) {
+
+    }
+
+    @Override
+    public void deregisterPartnership(boolean ifChange) {
+
     }
 }

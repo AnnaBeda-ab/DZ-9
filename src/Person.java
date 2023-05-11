@@ -36,9 +36,7 @@ public abstract class Person {
     public void setPartner (Person partner){
        partner=partner;
     }
-    protected boolean isRetired (){
-       return true;
-    }
+    protected abstract boolean isRetired ();
     public abstract void registerPartner (String lastNameOfHusband);
     public abstract void deregisterPartnership (boolean ifChange);
 

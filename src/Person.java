@@ -37,8 +37,7 @@ public abstract class Person {
        partner=partner;
     }
     protected abstract boolean isRetired ();
-    public abstract void registerPartner (String lastNameOfHusband);
-    public abstract void deregisterPartnership (boolean ifChange);
+
 
     @Override
     public String toString() {
